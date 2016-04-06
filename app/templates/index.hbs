@@ -1,0 +1,16 @@
+<h1>Welcome to Fancy Jams</h1>
+
+<p>
+  Buy and eat all the jam!
+</p>
+<ul>
+  {{#each model as |product|}}
+     {{product-tile product=product}}
+  {{/each}}
+</ul>
+
+<hr>
+
+{{display-cart}}
+
+<hr>

@@ -1,0 +1,17 @@
+{ "products" : [{
+   "name": "Ritzy Raspberry",
+   "description": "the best damn raspberry jam",
+   "cost": 18,
+   "image": "http://cookdiary.net/wp-content/uploads/images/Raspberry-Jam_12765.jpg"
+  }, {
+  "name": "Badass Blackberry",
+  "description": "delicious blackberry jam",
+  "cost": 18,
+  "image": "http://i349.photobucket.com/albums/q371/d-k-photos/Plum%20Jam/Plum-Jam0000037.jpg"
+  }, {
+  "name": "Strawberry Balsamic",
+  "description": "this will rock your world",
+  "cost": 20,
+  "image": "http://www.gygi.com/blog/wp-content/uploads/2015/07/7300_Strawberry-Balsamic-Jam.jpg"
+  }]
+}

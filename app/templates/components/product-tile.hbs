@@ -1,0 +1,11 @@
+<!-- {{product.tile}} -->
+<!-- {{product.image}} -->
+<!-- {{product.description}}
+{{product.cost}} -->
+
+<li>{{product.name}}, {{product.description}}, ${{product.cost}}</li>
+<p>
+<img src={{product.image}} alt={{product.name}}>
+</p>
+
+<button {{action 'addToCart' product}}>Add to Cart</button>
