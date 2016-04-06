@@ -6,7 +6,8 @@ export default Ember.Service.extend({
   add(item) {
     this.get('items').pushObject(item);
     console.log(this.get('items').map(function(item) {
-      return item.get('name');
+      return item.get('cost');
+
     }));
   }
 });
