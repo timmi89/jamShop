@@ -13,5 +13,14 @@
   "description": "this will rock your world",
   "cost": 20,
   "image": "http://www.gygi.com/blog/wp-content/uploads/2015/07/7300_Strawberry-Balsamic-Jam.jpg"
+  }],
+  "reviews": [{
+     "user": "gwen",
+     "rating": "4",
+     "content": "pretty good, but i wish it contained more organic blood of the innocent"
+   }, {
+     "user": "dirk",
+     "rating": "5",
+     "content": "best fucking jam in the universe, bro. goes really well with phish and a trust fund."
   }]
 }

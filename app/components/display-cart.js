@@ -10,12 +10,12 @@ export default Ember.Component.extend({
     var total = 0;
     items.forEach(function(item) {
       total += item.get('cost');
-    });
-    // for (i = 0; i < items.length; i++) {
-    //   total += items[i].get('cost');
-    // }
+    });  
     return total;
   })
 
-// totalCost: Ember.computed(parseInt(this.get('item.cost'))).length
 });
+// for (i = 0; i < items.length; i++) {
+//   total += items[i].get('cost');
+// })
+// totalCost: Ember.computed(parseInt(this.get('item.cost'))).length

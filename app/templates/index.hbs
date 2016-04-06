@@ -5,11 +5,18 @@
 </p>
 
 <ul>
-  {{#each model as |product|}}
-  <li>{{#link-to 'product' product.id}}{{product.name}}{{/link-to}}</li>
+  {{#each model.products as |product|}}
+  <!-- {{product-tile product=product}} {{product.cost product}} -->
+<li>{{#link-to 'product' product.id}}{{product.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
+<h2>reviews</h2>
+<ul>
+  {{#each model.reviews as |review|}}
+  <li>{{review.user}}</li>
+  {{/each}}
+</ul>
 <hr>
 
 {{display-cart}}
