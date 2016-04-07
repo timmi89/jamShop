@@ -1,0 +1,30 @@
+
+<hr>
+<!-- {{product.review.user}} says: {{product.review.content}} -->
+
+
+{{#if addNewReview}}
+  <h1>Write New Review</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="user">User</label>
+          {{input value=user id="user"}}
+        </div>
+
+        <div class="form-group">
+          <label for="rating">Rating(1-5)</label>
+          {{input value=rating id="rating"}}
+        </div>
+
+        <div class="form-group">
+          <label for="content">Write your review here</label>
+          {{input value=content id="content"}}
+        </div>
+
+        <button {{action 'save1'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'reviewFormShow'}}>New review</button>
+{{/if}}

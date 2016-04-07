@@ -1,0 +1,35 @@
+{{#if addNewProduct}}
+<h1>new jam</h1>
+   <div>
+     <form>
+       <div class="form-group">
+         <label for="name">name of jam</label>
+         {{input value=name id="name"}}
+       </div>
+
+       <div class="form-group">
+         <label for="description">description</label>
+         {{input value=description id="description"}}
+       </div>
+
+       <div class="form-group">
+         <label for="cost">Cost</label>
+         {{input value=cost id="cost"}}
+       </div>
+
+       <div class="form-group">
+         <label for="image">image url</label>
+         {{input value=image id="image"}}
+       </div>
+
+       <!-- <div class="form-group">
+         <label for="review">review</label>
+         {{input value=review id="review"}}
+       </div> -->
+
+       <button {{action 'saveA'}}>Save</button>
+     </form>
+   </div>
+   {{else}}
+ <button {{action 'productFormShow'}}>make new jam</button>
+ {{/if}}

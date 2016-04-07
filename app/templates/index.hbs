@@ -6,15 +6,21 @@
 
 <ul>
   {{#each model.products as |product|}}
-  <!-- {{product-tile product=product}} {{product.cost product}} -->
+
+  {{product-tile product=product destroyProduct="destroyProduct"}}
+
 <li>{{#link-to 'product' product.id}}{{product.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
+ <!-- <button {{action 'delete' product}}>delete jam</button> -->
+
+{{new-product saveB="saveC"}}
+
 <h2>reviews</h2>
 <ul>
   {{#each model.reviews as |review|}}
-  <li>{{review.user}}</li>
+  <li>{{#link-to 'review' review.id}}{{review.user}}{{/link-to}}</li>
   {{/each}}
 </ul>
 <hr>

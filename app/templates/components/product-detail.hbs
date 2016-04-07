@@ -1,8 +1,11 @@
 
+
 <img src={{product.image}} alt={{product.name}}>
-<p>
-  {{product.name}} is full of expensive organic shit that rich people can afford to have poor people produce.  it costs {{product.cost}}, an amount that would feed an average family of four, but you're not an average asshole, damnit. this jam is {{product.description}}, and you will love it, bitches!
-</p>
+<p>{{product.name}} is full of expensive organic shit that rich people can afford to have poor people produce.  it costs {{product.cost}}, an amount that would feed an average family of four, but you're not an average asshole, damnit. this jam is {{product.description}}, and you will love it, bitches!</p>
 <button {{action 'addToCart' product}}>Add to Cart</button>
-<hr>
+
+ <!-- <button {{action 'delete' product}}>delete jam</button> -->
+
+
+ <hr>
 {{display-cart}}
