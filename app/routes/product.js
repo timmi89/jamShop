@@ -15,7 +15,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     delete(product){
-      product.destroyRecord();
+      var review_deletions = product.get('review').map(function(review){
+        return review.destroyRecord();
+      });
+      Ember.RSVP.all(review_deletions).then(function(){
+        return product.destroyRecord();
+      });
       this.transitionTo('index');
     }
   }

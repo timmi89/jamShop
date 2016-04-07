@@ -5,6 +5,14 @@
 <button {{action 'addToCart' product}}>Add to Cart</button>
 
  <!-- <button {{action 'delete' product}}>delete jam</button> -->
+ <h2>reviews</h2>
+ <ul>
+   {{#each reviews as |review|}}
+   <li>{{#link-to 'review' review.id}}{{review.user}}{{/link-to}}</li>
+   {{/each}}
+ </ul>
+ <hr>
+ <!-- {{review-tile review=model}} -->
 
 
  <hr>

@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     },
       delete(product){
         if (confirm('do you really want to hurt jam? do you really want to make jam cry?')){
-          this.sendAction('destroyProduct', product);
+          this.sendAction('delete', product);
         }
       }
     }
