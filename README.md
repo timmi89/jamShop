@@ -1,7 +1,8 @@
 # Shopping-app
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This app creates a template for an online store in which a user may add items to their shopping cart, review products, and add more products to be sold.  
 
 ## Prerequisites
 
@@ -19,6 +20,10 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember install ember-cli-sass`
+* `ember install ember-bootstrap`
+
+
 
 ## Running / Development
 
@@ -41,7 +46,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+You will need a database if you would like to add or alter products.  Please remove my firebase link, and replace with your own in the environment.js file.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +55,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
